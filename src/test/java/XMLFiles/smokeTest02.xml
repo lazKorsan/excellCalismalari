@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Proje smoke Test Suite">
+    <test name="smoke Testler">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="User_Test.*"/> <!-- Testlerin bulunduğu paket -->
+        </packages>
+        <!-- VEYA -->
+        <classes>
+            <class name="User_Test.US_002"/> <!-- Spesifik sınıf -->
+        </classes>
+    </test>
+</suite>

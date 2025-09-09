@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Custom Test Order Suite">
+    <test name="Ordered Tests" preserve-order="true">
+        <classes>
+            <class name="uaYeni_28_08_25_tarihindeAcildi.pztfNgtfTst">
+                <methods>
+                    <include name="TC_01"/>
+                    <include name="TC_02"/>
+                    <include name="TC_03"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
