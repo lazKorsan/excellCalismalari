@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class AdminPages {
 
     public AdminPages() {
@@ -344,7 +346,8 @@ public class AdminPages {
         return loginPageSignInButton.isDisplayed();
     }
 
-
+   @FindBy(xpath = "//img[class='img-fluid']")
+    public List<WebElement> urunListesi ;
 
 
 
